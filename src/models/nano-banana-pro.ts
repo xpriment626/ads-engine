@@ -1,6 +1,27 @@
-import type { ModelAdapter, GenerateInput } from "./types.js";
+import {
+  type ModelAdapter,
+  type GenerateInput,
+  assertEnum,
+  assertMaxRefs,
+} from "./types.js";
+
+const ASPECT_RATIOS = [
+  "match_input_image",
+  "1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9",
+] as const;
+
+const RESOLUTIONS = ["1K", "2K", "4K"] as const;
+
+const OUTPUT_FORMATS = ["jpg", "png"] as const;
 
 export const nanaBananaPro: ModelAdapter = {
+  validate(input: GenerateInput) {
+    assertEnum("nano-banana-pro", "aspectRatio", input.aspectRatio, ASPECT_RATIOS);
+    assertEnum("nano-banana-pro", "resolution", input.resolution, RESOLUTIONS);
+    assertEnum("nano-banana-pro", "outputFormat", input.outputFormat, OUTPUT_FORMATS);
+    assertMaxRefs("nano-banana-pro", input, 14);
+  },
+
   buildInput(input: GenerateInput) {
     const params: Record<string, unknown> = {
       prompt: input.prompt,

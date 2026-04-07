@@ -28,6 +28,7 @@ export async function generate(
     throw new Error(`No adapter for model "${modelKey}"`);
   }
 
+  adapter.validate(input);
   const modelInput = adapter.buildInput(input);
 
   console.log(`[generate] ${modelDef.name} (${modelDef.id})`);

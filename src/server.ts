@@ -2,7 +2,7 @@ import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { generate } from "./generate.js";
 import { models, listModels } from "./models/registry.js";
-import type { GenerateInput } from "./models/types.js";
+import { type GenerateInput, ValidationError } from "./models/types.js";
 
 // Load .env
 import { readFileSync } from "fs";
@@ -52,8 +52,9 @@ app.post("/generate/:model", async (c) => {
     return c.json(result);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
+    const status = err instanceof ValidationError ? 400 : 500;
     console.error(`[server] Error:`, message);
-    return c.json({ error: message }, 500);
+    return c.json({ error: message }, status);
   }
 });
 
