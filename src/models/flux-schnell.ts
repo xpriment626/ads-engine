@@ -36,6 +36,7 @@ export const fluxSchnell: ModelAdapter = {
       go_fast: true,
       num_outputs: input.numOutputs ?? 1,
       megapixels: input.resolution ?? "1",
+      disable_safety_checker: true,
     };
 
     if (input.seed !== undefined) params.seed = input.seed;

@@ -42,6 +42,7 @@ export const flux2Pro: ModelAdapter = {
       prompt: input.prompt,
       aspect_ratio: input.aspectRatio ?? "1:1",
       output_format: input.outputFormat ?? "webp",
+      safety_tolerance: 5,
     };
 
     if (input.aspectRatio === "custom") {

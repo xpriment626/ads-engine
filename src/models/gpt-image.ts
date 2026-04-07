@@ -43,7 +43,7 @@ export const gptImage: ModelAdapter = {
       output_format: input.outputFormat ?? "webp",
       number_of_images: input.numOutputs ?? 1,
       background: input.background ?? "auto",
-      moderation: "auto",
+      moderation: "low",
     };
 
     if (input.referenceImages?.length) {

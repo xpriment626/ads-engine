@@ -25,6 +25,7 @@ export const fluxKontextPro: ModelAdapter = {
       prompt: input.prompt,
       aspect_ratio: input.aspectRatio ?? "match_input_image",
       output_format: input.outputFormat ?? "png",
+      safety_tolerance: input.referenceImages?.length ? 2 : 6,
     };
 
     if (input.seed !== undefined) params.seed = input.seed;
