@@ -1,3 +1,8 @@
+# Search Defaults
+- Exa MCP for web search
+- Firecrawl MCP when scraping required
+- gh CLI for codebase analysis
+
 # Operating procedure for when in --dangerously-skip-permissions mode
 
 ## Uncertainty Handling
