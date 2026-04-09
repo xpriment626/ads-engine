@@ -1,7 +1,40 @@
+# Brandouble
+
+Agent-native static ad creation for startups and solopreneurs. This is a product with a Figma-compatible scene graph engine, composition agent, and direct-manipulation editor.
+
+## Key docs
+
+- **Design spec:** `docs/superpowers/specs/2026-04-09-brandouble-mvp-design.md`
+- **Implementation plans:** `docs/superpowers/plans/README.md` (phasing overview + dependency graph)
+- Plans A-G in `docs/superpowers/plans/` — read the README first for build order
+
+## Project structure
+
+```
+src/
+  providers/replicate/    # Replicate image gen provider (HTTP + MCP server)
+  scene-graph/            # (Plan A) Figma-compatible node tree engine
+  compositor/             # (Plan B) Device mockup compositing
+  project/                # (Plan C) Brand canvas, project model, generation history
+  agent/                  # (Plan E) Composition agent (AI SDK)
+client/                   # (Plan D + F) React app — renderer + editor UI
+scripts/                  # Test and demo scripts
+```
+
+Directories under `src/` that don't exist yet are created by their respective plans. `src/providers/replicate/` is the only implemented provider so far.
+
+## Conventions
+
+- Scene graph types are the core data structure — everything reads and writes them
+- Providers (Replicate, future fal.ai, Together) live under `src/providers/`
+- Each provider exposes capabilities as MCP tools
+- Tests use vitest, live in `tests/` mirroring `src/` structure
+
 # Search Defaults
 - Exa MCP for web search
 - Firecrawl MCP when scraping required
 - gh CLI for codebase analysis
+- Playwright MCP for when you need to grab visual reference of something on the screen or need data that can only be taken by interacting directly with the browser. You must use chromium installation and not the user's system level Chrome browser, and you must ALWAYS kill the Playwright process gracefully to ensure no linger zombies. 
 
 # Operating procedure for when in --dangerously-skip-permissions mode
 

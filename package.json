@@ -1,12 +1,12 @@
 {
-  "name": "image-engine",
+  "name": "brandouble",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "start": "tsx src/server.ts",
-    "mcp": "tsx src/mcp-server.ts"
+    "dev": "tsx watch src/providers/replicate/server.ts",
+    "start": "tsx src/providers/replicate/server.ts",
+    "mcp": "tsx src/providers/replicate/mcp-server.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.0",
