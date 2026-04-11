@@ -1,0 +1,111 @@
+{
+  "id": "root",
+  "type": "FRAME",
+  "name": "Banner",
+  "x": 0, "y": 0, "width": 1200, "height": 675,
+  "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+  "strokes": [], "effects": [],
+  "cornerRadius": 0, "opacity": 1, "visible": true,
+  "clipsContent": true,
+  "layoutMode": "HORIZONTAL",
+  "primaryAxisAlignItems": "SPACE_BETWEEN",
+  "counterAxisAlignItems": "CENTER",
+  "primaryAxisSizingMode": "FIXED",
+  "counterAxisSizingMode": "FIXED",
+  "paddingLeft": 60, "paddingRight": 60, "paddingTop": 48, "paddingBottom": 48,
+  "itemSpacing": 40,
+  "children": [
+    {
+      "id": "copy-group",
+      "type": "FRAME",
+      "name": "CopyGroup",
+      "x": 0, "y": 0, "width": 500, "height": 400,
+      "fills": [], "strokes": [], "effects": [],
+      "cornerRadius": 0, "opacity": 1, "visible": true,
+      "clipsContent": false,
+      "layoutMode": "VERTICAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "primaryAxisSizingMode": "FIXED",
+      "counterAxisSizingMode": "FIXED",
+      "paddingLeft": 0, "paddingRight": 0, "paddingTop": 0, "paddingBottom": 0,
+      "itemSpacing": 20,
+      "children": [
+        {
+          "id": "headline",
+          "type": "TEXT",
+          "name": "Headline",
+          "x": 0, "y": 0, "width": 500, "height": 60,
+          "fills": [{ "type": "SOLID", "color": { "r": 0.1, "g": 0.1, "b": 0.12, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "opacity": 1, "visible": true,
+          "characters": "Your Headline Here",
+          "style": {
+            "fontFamily": "Inter", "fontSize": 42, "fontWeight": 700,
+            "textAlignHorizontal": "LEFT", "textAlignVertical": "TOP",
+            "lineHeightPx": 50, "letterSpacing": -0.5
+          }
+        },
+        {
+          "id": "subtext",
+          "type": "TEXT",
+          "name": "Subtext",
+          "x": 0, "y": 0, "width": 500, "height": 48,
+          "fills": [{ "type": "SOLID", "color": { "r": 0.4, "g": 0.4, "b": 0.45, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "opacity": 1, "visible": true,
+          "characters": "Supporting text goes here",
+          "style": {
+            "fontFamily": "Inter", "fontSize": 18, "fontWeight": 400,
+            "textAlignHorizontal": "LEFT", "textAlignVertical": "TOP",
+            "lineHeightPx": 28, "letterSpacing": 0
+          }
+        },
+        {
+          "id": "cta",
+          "type": "FRAME",
+          "name": "CTA",
+          "x": 0, "y": 0, "width": 180, "height": 48,
+          "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.36, "b": 0.9, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "cornerRadius": 8, "opacity": 1, "visible": true,
+          "clipsContent": false,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "primaryAxisSizingMode": "HUG",
+          "counterAxisSizingMode": "HUG",
+          "paddingLeft": 24, "paddingRight": 24, "paddingTop": 12, "paddingBottom": 12,
+          "itemSpacing": 0,
+          "children": [
+            {
+              "id": "cta-text",
+              "type": "TEXT",
+              "name": "CTAText",
+              "x": 0, "y": 0, "width": 130, "height": 24,
+              "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+              "strokes": [], "effects": [],
+              "opacity": 1, "visible": true,
+              "characters": "Learn More",
+              "style": {
+                "fontFamily": "Inter", "fontSize": 16, "fontWeight": 600,
+                "textAlignHorizontal": "CENTER", "textAlignVertical": "CENTER",
+                "lineHeightPx": 24, "letterSpacing": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-image",
+      "type": "IMAGE",
+      "name": "HeroImage",
+      "x": 0, "y": 0, "width": 500, "height": 500,
+      "fills": [], "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "source": "",
+      "fit": "cover"
+    }
+  ]
+}

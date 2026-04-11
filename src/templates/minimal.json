@@ -1,0 +1,106 @@
+{
+  "id": "root",
+  "type": "FRAME",
+  "name": "Banner",
+  "x": 0, "y": 0, "width": 1200, "height": 675,
+  "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+  "strokes": [], "effects": [],
+  "cornerRadius": 0, "opacity": 1, "visible": true,
+  "clipsContent": true,
+  "layoutMode": "HORIZONTAL",
+  "primaryAxisAlignItems": "SPACE_BETWEEN",
+  "counterAxisAlignItems": "CENTER",
+  "primaryAxisSizingMode": "FIXED",
+  "counterAxisSizingMode": "FIXED",
+  "paddingLeft": 60, "paddingRight": 60, "paddingTop": 48, "paddingBottom": 48,
+  "itemSpacing": 40,
+  "children": [
+    {
+      "id": "left-group",
+      "type": "FRAME",
+      "name": "LeftGroup",
+      "x": 0, "y": 0, "width": 500, "height": 300,
+      "fills": [], "strokes": [], "effects": [],
+      "cornerRadius": 0, "opacity": 1, "visible": true,
+      "clipsContent": false,
+      "layoutMode": "VERTICAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "primaryAxisSizingMode": "FIXED",
+      "counterAxisSizingMode": "FIXED",
+      "paddingLeft": 0, "paddingRight": 0, "paddingTop": 0, "paddingBottom": 0,
+      "itemSpacing": 20,
+      "children": [
+        {
+          "id": "logo",
+          "type": "IMAGE",
+          "name": "Logo",
+          "x": 0, "y": 0, "width": 48, "height": 48,
+          "fills": [], "strokes": [], "effects": [],
+          "opacity": 1, "visible": true,
+          "source": "",
+          "fit": "contain"
+        },
+        {
+          "id": "headline",
+          "type": "TEXT",
+          "name": "Headline",
+          "x": 0, "y": 0, "width": 500, "height": 60,
+          "fills": [{ "type": "SOLID", "color": { "r": 0.1, "g": 0.1, "b": 0.12, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "opacity": 1, "visible": true,
+          "characters": "Your Headline Here",
+          "style": {
+            "fontFamily": "Inter", "fontSize": 40, "fontWeight": 700,
+            "textAlignHorizontal": "LEFT", "textAlignVertical": "TOP",
+            "lineHeightPx": 48, "letterSpacing": -0.5
+          }
+        },
+        {
+          "id": "cta",
+          "type": "FRAME",
+          "name": "CTA",
+          "x": 0, "y": 0, "width": 160, "height": 44,
+          "fills": [{ "type": "SOLID", "color": { "r": 0.1, "g": 0.1, "b": 0.12, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "cornerRadius": 6, "opacity": 1, "visible": true,
+          "clipsContent": false,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "primaryAxisSizingMode": "HUG",
+          "counterAxisSizingMode": "HUG",
+          "paddingLeft": 20, "paddingRight": 20, "paddingTop": 10, "paddingBottom": 10,
+          "itemSpacing": 0,
+          "children": [
+            {
+              "id": "cta-text",
+              "type": "TEXT",
+              "name": "CTAText",
+              "x": 0, "y": 0, "width": 120, "height": 24,
+              "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+              "strokes": [], "effects": [],
+              "opacity": 1, "visible": true,
+              "characters": "Get Started",
+              "style": {
+                "fontFamily": "Inter", "fontSize": 14, "fontWeight": 600,
+                "textAlignHorizontal": "CENTER", "textAlignVertical": "CENTER",
+                "lineHeightPx": 20, "letterSpacing": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accent-illustration",
+      "type": "IMAGE",
+      "name": "AccentIllustration",
+      "x": 0, "y": 0, "width": 400, "height": 400,
+      "fills": [], "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "source": "",
+      "fit": "contain"
+    }
+  ]
+}

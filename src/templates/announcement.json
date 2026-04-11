@@ -1,0 +1,77 @@
+{
+  "id": "root",
+  "type": "FRAME",
+  "name": "Banner",
+  "x": 0, "y": 0, "width": 1200, "height": 675,
+  "fills": [{ "type": "GRADIENT_LINEAR", "stops": [
+    { "position": 0, "color": { "r": 0.15, "g": 0.1, "b": 0.35, "a": 1 } },
+    { "position": 1, "color": { "r": 0.05, "g": 0.05, "b": 0.15, "a": 1 } }
+  ] }],
+  "strokes": [], "effects": [],
+  "cornerRadius": 0, "opacity": 1, "visible": true,
+  "clipsContent": true,
+  "layoutMode": "VERTICAL",
+  "primaryAxisAlignItems": "CENTER",
+  "counterAxisAlignItems": "CENTER",
+  "primaryAxisSizingMode": "FIXED",
+  "counterAxisSizingMode": "FIXED",
+  "paddingLeft": 80, "paddingRight": 80, "paddingTop": 60, "paddingBottom": 60,
+  "itemSpacing": 24,
+  "children": [
+    {
+      "id": "logo",
+      "type": "IMAGE",
+      "name": "Logo",
+      "x": 0, "y": 0, "width": 120, "height": 120,
+      "fills": [], "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "source": "",
+      "fit": "contain"
+    },
+    {
+      "id": "headline",
+      "type": "TEXT",
+      "name": "Headline",
+      "x": 0, "y": 0, "width": 800, "height": 70,
+      "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+      "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "characters": "Announcement Headline",
+      "style": {
+        "fontFamily": "Inter", "fontSize": 56, "fontWeight": 700,
+        "textAlignHorizontal": "CENTER", "textAlignVertical": "TOP",
+        "lineHeightPx": 68, "letterSpacing": -1
+      }
+    },
+    {
+      "id": "subtext",
+      "type": "TEXT",
+      "name": "Subtext",
+      "x": 0, "y": 0, "width": 600, "height": 32,
+      "fills": [{ "type": "SOLID", "color": { "r": 0.7, "g": 0.7, "b": 0.8, "a": 1 } }],
+      "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "characters": "Supporting details here",
+      "style": {
+        "fontFamily": "Inter", "fontSize": 20, "fontWeight": 400,
+        "textAlignHorizontal": "CENTER", "textAlignVertical": "TOP",
+        "lineHeightPx": 30, "letterSpacing": 0
+      }
+    },
+    {
+      "id": "date",
+      "type": "TEXT",
+      "name": "Date",
+      "x": 0, "y": 0, "width": 300, "height": 24,
+      "fills": [{ "type": "SOLID", "color": { "r": 0.5, "g": 0.5, "b": 0.6, "a": 1 } }],
+      "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "characters": "April 2026",
+      "style": {
+        "fontFamily": "Inter", "fontSize": 16, "fontWeight": 500,
+        "textAlignHorizontal": "CENTER", "textAlignVertical": "TOP",
+        "lineHeightPx": 24, "letterSpacing": 1
+      }
+    }
+  ]
+}

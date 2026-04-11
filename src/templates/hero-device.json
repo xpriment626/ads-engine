@@ -1,0 +1,78 @@
+{
+  "id": "root",
+  "type": "FRAME",
+  "name": "Banner",
+  "x": 0, "y": 0, "width": 1200, "height": 675,
+  "fills": [{ "type": "SOLID", "color": { "r": 0.96, "g": 0.96, "b": 0.97, "a": 1 } }],
+  "strokes": [], "effects": [],
+  "cornerRadius": 0, "opacity": 1, "visible": true,
+  "clipsContent": true,
+  "layoutMode": "VERTICAL",
+  "primaryAxisAlignItems": "CENTER",
+  "counterAxisAlignItems": "CENTER",
+  "primaryAxisSizingMode": "FIXED",
+  "counterAxisSizingMode": "FIXED",
+  "paddingLeft": 60, "paddingRight": 60, "paddingTop": 48, "paddingBottom": 48,
+  "itemSpacing": 32,
+  "children": [
+    {
+      "id": "headline",
+      "type": "TEXT",
+      "name": "Headline",
+      "x": 0, "y": 0, "width": 800, "height": 60,
+      "fills": [{ "type": "SOLID", "color": { "r": 0.1, "g": 0.1, "b": 0.12, "a": 1 } }],
+      "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "characters": "Your Headline Here",
+      "style": {
+        "fontFamily": "Inter", "fontSize": 48, "fontWeight": 700,
+        "textAlignHorizontal": "CENTER", "textAlignVertical": "TOP",
+        "lineHeightPx": 58, "letterSpacing": -1
+      }
+    },
+    {
+      "id": "device-mockup",
+      "type": "IMAGE",
+      "name": "DeviceMockup",
+      "x": 0, "y": 0, "width": 300, "height": 400,
+      "fills": [], "strokes": [], "effects": [],
+      "opacity": 1, "visible": true,
+      "source": "",
+      "fit": "contain"
+    },
+    {
+      "id": "cta",
+      "type": "FRAME",
+      "name": "CTA",
+      "x": 0, "y": 0, "width": 200, "height": 48,
+      "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.36, "b": 0.9, "a": 1 } }],
+      "strokes": [], "effects": [],
+      "cornerRadius": 8, "opacity": 1, "visible": true,
+      "clipsContent": false,
+      "layoutMode": "HORIZONTAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "primaryAxisSizingMode": "HUG",
+      "counterAxisSizingMode": "HUG",
+      "paddingLeft": 24, "paddingRight": 24, "paddingTop": 12, "paddingBottom": 12,
+      "itemSpacing": 0,
+      "children": [
+        {
+          "id": "cta-text",
+          "type": "TEXT",
+          "name": "CTAText",
+          "x": 0, "y": 0, "width": 150, "height": 24,
+          "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+          "strokes": [], "effects": [],
+          "opacity": 1, "visible": true,
+          "characters": "Get Started",
+          "style": {
+            "fontFamily": "Inter", "fontSize": 16, "fontWeight": 600,
+            "textAlignHorizontal": "CENTER", "textAlignVertical": "CENTER",
+            "lineHeightPx": 24, "letterSpacing": 0
+          }
+        }
+      ]
+    }
+  ]
+}
